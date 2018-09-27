@@ -1,0 +1,9 @@
+1. List the base images on the system. Choose a base image for Ubuntu and create a container from that image. This container should be named "basic_web" and should be interactive, attached to the current console and run the bash prompt.
+
+2. Once you are logged into the container at the prompt, install all updates. After updates are installed, install the Apache Web Server and verify that it is listening on Port 80.
+
+3. Using the root account profile file in the root home directory, add the command to start the web server whenever a bash session is started. 
+
+4. Stop the container. Once stopped, commit the container as a base image called "ubuntu:baseweb".
+
+5. Create a container based on the new "ubuntu:baseweb" image called "test_container". It should run interactively, attached to the console and starting a bash prompt. Once logged into the container, verify that the Apache service is running and port 80 is listening. Exit the container.
