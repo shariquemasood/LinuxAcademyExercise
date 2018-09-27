@@ -23,3 +23,8 @@ docker commit basic_web ubuntu:baseweb
 docker images
 docker run -it --name="test_container" ubuntu:baseweb /bin/bash
   telnet localhost 80
+Note: Telnet output
+
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
