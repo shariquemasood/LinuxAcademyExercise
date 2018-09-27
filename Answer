@@ -1,0 +1,25 @@
+docker images
+docker pull ubuntu:latest
+docker run -it --name="basic_web" ubuntu:latest /bin/bash
+   apt-get update
+   apt-get install apache2
+   apt-get install telnet
+   apt-get install vim
+   service apache2 start
+   telnet localhost 80
+   NOTE: This is telnet output
+      root@89c58135623f:/# telnet localhost 80
+      Trying 127.0.0.1...
+      Connected to localhost.
+      Escape character is '^]'.
+
+
+      vi .bashrc
+      Note: Add  bewlow line to .bashrc so when we open bash the apach server start
+ 
+          service apache2 start
+          
+docker commit basic_web ubuntu:baseweb
+docker images
+docker run -it --name="test_container" ubuntu:baseweb /bin/bash
+  telnet localhost 80
